@@ -14,15 +14,13 @@ The goal of this project is to:
 
 ## Structure
 ```
-.gitignore # Files to be ignored
-Deaths_by_Police.csv # Data regarding victims
-Fatal_Force.ipynb # Jupyter Notebook File
-Median_Household_Income_2015.csv # Median Household Income Data
-Pct_Over_25_Completed_High_School.csv # Pct of High School Graduates by Region
-Pct_People_Below_Poverty_Level.csv # Pct of People Below the Poverty Line by Region
-README.md # Current File
-requirements.txt # Python packages used
-Share_of_Race_By_City.csv # Breakdown of Racial Populations by Region
+|-Data
+| |-csv_format/ # Original csv files
+| |_db_format/ #Databases for SQLite querying
+|-.gitignore # Files to be ignored
+|-Fatal_Force.ipynb # Jupyter Notebook File 
+|-README.md # Current File
+|_requirements.txt # Python packages used
 ```
 
 ## Running the Notebook
