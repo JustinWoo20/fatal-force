@@ -1,0 +1,32 @@
+state,city,race,total_fatalities
+TX,Austin,White,11
+TX,Austin,Black,3
+TX,Austin,Hispanic,2
+IL,Chicago,Black,21
+IL,Chicago,White,2
+IL,Chicago,Hispanic,1
+OH,Columbus,Black,10
+OH,Columbus,White,5
+TX,Houston,Black,15
+TX,Houston,Hispanic,6
+TX,Houston,White,3
+TX,Houston,Asian,1
+NV,Las Vegas,White,9
+NV,Las Vegas,Hispanic,5
+NV,Las Vegas,Black,3
+CA,Los Angeles,Hispanic,19
+CA,Los Angeles,Black,10
+CA,Los Angeles,White,6
+CA,Los Angeles,Asian,1
+FL,Miami,Black,8
+FL,Miami,Hispanic,6
+FL,Miami,White,2
+AZ,Phoenix,White,12
+AZ,Phoenix,Hispanic,11
+AZ,Phoenix,Native American,3
+AZ,Phoenix,Black,2
+TX,San Antonio,Hispanic,12
+TX,San Antonio,Black,3
+TX,San Antonio,White,3
+MO,St. Louis,Black,11
+MO,St. Louis,White,3
