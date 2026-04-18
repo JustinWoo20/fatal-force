@@ -14,3 +14,7 @@ __pycache__/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Ignore workbooks and just show finished products
+tableau_workbooks/General.twb
+
+anaconda_projects/

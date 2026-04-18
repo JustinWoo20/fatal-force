@@ -16,7 +16,9 @@ The goal of this project is to:
 ```
 |-Data
 | |-csv_format/ # Original csv files
-| |_db_format/ #Databases for SQLite querying
+| |_db_format/ # Databases for SQLite querying
+|-tableau_workbooks # Tableau outputs
+  |_output # Example images
 |-.gitignore # Files to be ignored
 |-Fatal_Force.ipynb # Jupyter Notebook File 
 |-README.md # Current File
@@ -59,6 +61,11 @@ Install them with:
 ```
 pip install -r requirements.txt
 ```
+
+---
+## Tableau 
+[General](https://public.tableau.com/views/FatalForce-General/General?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![General.png](tableau_workbooks/output/General.png)
 
 ---
 ## Future Improvements
