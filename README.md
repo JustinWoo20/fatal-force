@@ -67,6 +67,9 @@ pip install -r requirements.txt
 [General](https://public.tableau.com/views/FatalForce-General/General?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![General.png](tableau_workbooks/output/General.png)
 
+[Fatalities by Age](https://public.tableau.com/views/FatalitiesbyAge/FatalitiesbyAge?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![fatalities-by-age.png](tableau_workbooks/output/fatalities-by-age.png)
+
 ---
 ## Future Improvements
 Currently, the data analysis does not account for population differences across the various regions represented in the dataset. 
