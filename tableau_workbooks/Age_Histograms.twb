@@ -1,0 +1,1610 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='race_aga_fatalities' inline='true' name='federated.04yknzt1bbsgfq15x0gut0xlosnf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='race_aga_fatalities' name='textscan.0x8zmh70atuf4m12w2s3z1m9er6f'>
+            <connection class='textscan' directory='C:/Users/wooda/dev/Data-Analysis/fatal-force/data/csv_format/clean_data' filename='race_aga_fatalities.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0x8zmh70atuf4m12w2s3z1m9er6f' name='race_aga_fatalities.csv' table='[race_aga_fatalities#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='string' name='race' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[race_aga_fatalities.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[race_aga_fatalities.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[race_aga_fatalities.csv_380AFFBE806F466F832F27E7948950FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[race_aga_fatalities.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[race_aga_fatalities.csv_380AFFBE806F466F832F27E7948950FA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='race_aga_fatalities.csv' datatype='table' name='[__tableau_internal_object_id__].[race_aga_fatalities.csv_380AFFBE806F466F832F27E7948950FA]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/wooda/AppData/Local/Temp/TableauTemp/#TableauTemp_19q5a6206ctdep1d2uspc104tl74.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2026 07:59:05 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>race_aga_fatalities.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[race_aga_fatalities.csv_380AFFBE806F466F832F27E7948950FA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>1</ordinal>
+              <family>race_aga_fatalities.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[race_aga_fatalities.csv_380AFFBE806F466F832F27E7948950FA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='race_aga_fatalities.csv' id='race_aga_fatalities.csv_380AFFBE806F466F832F27E7948950FA'>
+            <properties context=''>
+              <relation connection='textscan.0x8zmh70atuf4m12w2s3z1m9er6f' name='race_aga_fatalities.csv' table='[race_aga_fatalities#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='string' name='race' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='fatalities_age' inline='true' name='federated.1lip6k30grpc191diie4z1esej9o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fatalities_age' name='textscan.1ahva111d22brx14v703j0fkebju'>
+            <connection class='textscan' directory='C:/Users/wooda/dev/Data-Analysis/fatal-force/data/csv_format/clean_data' filename='fatalities_age.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ahva111d22brx14v703j0fkebju' name='fatalities_age.csv' table='[fatalities_age#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US'>
+            <column datatype='real' name='age' ordinal='0' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fatalities_age.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[fatalities_age.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fatalities_age.csv_6B322FBDA42F4DAFA14E07D063A2BF91]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+      </column>
+      <column caption='Bin Ranges' datatype='real' name='[Calculation_1484128057872385]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Age (bin)] + &quot;-&quot; + ([Age (bin)] + 3)' />
+      </column>
+      <column caption='fatalities_age.csv' datatype='table' name='[__tableau_internal_object_id__].[fatalities_age.csv_6B322FBDA42F4DAFA14E07D063A2BF91]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/wooda/AppData/Local/Temp/TableauTemp/#TableauTemp_04qep810or1aue1d2yl92167kxlh.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2026 08:01:43 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>fatalities_age.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[fatalities_age.csv_6B322FBDA42F4DAFA14E07D063A2BF91]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='fatalities_age.csv' id='fatalities_age.csv_6B322FBDA42F4DAFA14E07D063A2BF91'>
+            <properties context=''>
+              <relation connection='textscan.1ahva111d22brx14v703j0fkebju' name='fatalities_age.csv' table='[fatalities_age#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US'>
+                  <column datatype='real' name='age' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='age_fata_Black' inline='true' name='federated.0uf94sc023fmu018tf8bu1re6sn4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='age_fata_Black' name='textscan.0f6pth61kngqhm1bdadsd06nekvt'>
+            <connection class='textscan' directory='C:/Users/wooda/dev/Data-Analysis/fatal-force/data/csv_format/clean_data' filename='age_fata_Black.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0f6pth61kngqhm1bdadsd06nekvt' name='age_fata_Black.csv' table='[age_fata_Black#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='string' name='race' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[age_fata_Black.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[age_fata_Black.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[age_fata_Black.csv_F2C10D93343D405D899609D1EB427EF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[age_fata_Black.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[age_fata_Black.csv_F2C10D93343D405D899609D1EB427EF4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+      </column>
+      <column caption='age_fata_Black.csv' datatype='table' name='[__tableau_internal_object_id__].[age_fata_Black.csv_F2C10D93343D405D899609D1EB427EF4]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/wooda/AppData/Local/Temp/TableauTemp/#TableauTemp_05ibfrg182je8419ymlf81gy9dhz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2026 08:05:40 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>age_fata_Black.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[age_fata_Black.csv_F2C10D93343D405D899609D1EB427EF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>1</ordinal>
+              <family>age_fata_Black.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[age_fata_Black.csv_F2C10D93343D405D899609D1EB427EF4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='age_fata_Black.csv' id='age_fata_Black.csv_F2C10D93343D405D899609D1EB427EF4'>
+            <properties context=''>
+              <relation connection='textscan.0f6pth61kngqhm1bdadsd06nekvt' name='age_fata_Black.csv' table='[age_fata_Black#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='string' name='race' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='age_fata_Hispanic' inline='true' name='federated.0nag9n01lrjbkf15odpyd0h72ns0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='age_fata_Hispanic' name='textscan.0bk384x00g4h8f1ba45t80yxdddq'>
+            <connection class='textscan' directory='C:/Users/wooda/dev/Data-Analysis/fatal-force/data/csv_format/clean_data' filename='age_fata_Hispanic.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0bk384x00g4h8f1ba45t80yxdddq' name='age_fata_Hispanic.csv' table='[age_fata_Hispanic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='string' name='race' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[age_fata_Hispanic.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[age_fata_Hispanic.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[age_fata_Hispanic.csv_A36E929D6EDE45C58E000F55647C4005]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[age_fata_Hispanic.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[age_fata_Hispanic.csv_A36E929D6EDE45C58E000F55647C4005]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+      </column>
+      <column caption='age_fata_Hispanic.csv' datatype='table' name='[__tableau_internal_object_id__].[age_fata_Hispanic.csv_A36E929D6EDE45C58E000F55647C4005]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/wooda/AppData/Local/Temp/TableauTemp/#TableauTemp_0ubqkfs09zkeij16ufimu1ightpg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2026 08:07:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>age_fata_Hispanic.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[age_fata_Hispanic.csv_A36E929D6EDE45C58E000F55647C4005]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>1</ordinal>
+              <family>age_fata_Hispanic.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[age_fata_Hispanic.csv_A36E929D6EDE45C58E000F55647C4005]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='age_fata_Hispanic.csv' id='age_fata_Hispanic.csv_A36E929D6EDE45C58E000F55647C4005'>
+            <properties context=''>
+              <relation connection='textscan.0bk384x00g4h8f1ba45t80yxdddq' name='age_fata_Hispanic.csv' table='[age_fata_Hispanic#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='string' name='race' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='age_fata_Asian' inline='true' name='federated.0aurd2l12rs0ob1gjh1y10gniq9b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='age_fata_Asian' name='textscan.0t4dgju038myey18bqham08fz6td'>
+            <connection class='textscan' directory='C:/Users/wooda/dev/Data-Analysis/fatal-force/data/csv_format/clean_data' filename='age_fata_Asian.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0t4dgju038myey18bqham08fz6td' name='age_fata_Asian.csv' table='[age_fata_Asian#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='string' name='race' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[age_fata_Asian.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[age_fata_Asian.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[age_fata_Asian.csv_AFDEF3E0BA054B8784204D61FA7ABC98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[age_fata_Asian.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[age_fata_Asian.csv_AFDEF3E0BA054B8784204D61FA7ABC98]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+      </column>
+      <column caption='age_fata_Asian.csv' datatype='table' name='[__tableau_internal_object_id__].[age_fata_Asian.csv_AFDEF3E0BA054B8784204D61FA7ABC98]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/wooda/AppData/Local/Temp/TableauTemp/#TableauTemp_0ttohf40cad3yv19kfmbl0k1mfkr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2026 08:08:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>age_fata_Asian.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[age_fata_Asian.csv_AFDEF3E0BA054B8784204D61FA7ABC98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>1</ordinal>
+              <family>age_fata_Asian.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[age_fata_Asian.csv_AFDEF3E0BA054B8784204D61FA7ABC98]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='age_fata_Asian.csv' id='age_fata_Asian.csv_AFDEF3E0BA054B8784204D61FA7ABC98'>
+            <properties context=''>
+              <relation connection='textscan.0t4dgju038myey18bqham08fz6td' name='age_fata_Asian.csv' table='[age_fata_Asian#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='string' name='race' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='age_fata_Native American' inline='true' name='federated.06jr4jg0a0fa9e152tl3r1mtfpuc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='age_fata_Native American' name='textscan.1xu1h1l1rgyy0i1e3dhrb1c7jxrf'>
+            <connection class='textscan' directory='C:/Users/wooda/dev/Data-Analysis/fatal-force/data/csv_format/clean_data' filename='age_fata_Native American.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xu1h1l1rgyy0i1e3dhrb1c7jxrf' name='age_fata_Native American.csv' table='[age_fata_Native American#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='string' name='race' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[age_fata_Native American.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[age_fata_Native American.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[age_fata_Native American.csv_755E38EE74D24C5882FC71DF08797F34]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[age_fata_Native American.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[age_fata_Native American.csv_755E38EE74D24C5882FC71DF08797F34]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+      </column>
+      <column caption='age_fata_Native American.csv' datatype='table' name='[__tableau_internal_object_id__].[age_fata_Native American.csv_755E38EE74D24C5882FC71DF08797F34]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/wooda/AppData/Local/Temp/TableauTemp/#TableauTemp_1eakchk0dyopdd1d61sfn12cdxel.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2026 08:08:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>age_fata_Native American.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[age_fata_Native American.csv_755E38EE74D24C5882FC71DF08797F34]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>1</ordinal>
+              <family>age_fata_Native American.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[age_fata_Native American.csv_755E38EE74D24C5882FC71DF08797F34]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='age_fata_Native American.csv' id='age_fata_Native American.csv_755E38EE74D24C5882FC71DF08797F34'>
+            <properties context=''>
+              <relation connection='textscan.1xu1h1l1rgyy0i1e3dhrb1c7jxrf' name='age_fata_Native American.csv' table='[age_fata_Native American#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='string' name='race' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='age_fata_White' inline='true' name='federated.0n98j6m0cqld8b137g8oc0mljje2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='age_fata_White' name='textscan.01svi5g1xv52h31ceyjgz0rkqlgs'>
+            <connection class='textscan' directory='C:/Users/wooda/dev/Data-Analysis/fatal-force/data/csv_format/clean_data' filename='age_fata_White.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01svi5g1xv52h31ceyjgz0rkqlgs' name='age_fata_White.csv' table='[age_fata_White#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='string' name='race' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[age_fata_White.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[age_fata_White.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[age_fata_White.csv_4BF3A59F1A7C442A9BCFB6FFCC74FFBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[age_fata_White.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[age_fata_White.csv_4BF3A59F1A7C442A9BCFB6FFCC74FFBA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+      </column>
+      <column caption='age_fata_White.csv' datatype='table' name='[__tableau_internal_object_id__].[age_fata_White.csv_4BF3A59F1A7C442A9BCFB6FFCC74FFBA]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/wooda/AppData/Local/Temp/TableauTemp/#TableauTemp_0aignvg0w7yadb1gkzu951n6wih3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2026 08:16:07 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>age_fata_White.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[age_fata_White.csv_4BF3A59F1A7C442A9BCFB6FFCC74FFBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>1</ordinal>
+              <family>age_fata_White.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[age_fata_White.csv_4BF3A59F1A7C442A9BCFB6FFCC74FFBA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='age_fata_White.csv' id='age_fata_White.csv_4BF3A59F1A7C442A9BCFB6FFCC74FFBA'>
+            <properties context=''>
+              <relation connection='textscan.01svi5g1xv52h31ceyjgz0rkqlgs' name='age_fata_White.csv' table='[age_fata_White#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='string' name='race' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Asian'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='age_fata_Asian' name='federated.0aurd2l12rs0ob1gjh1y10gniq9b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aurd2l12rs0ob1gjh1y10gniq9b'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0aurd2l12rs0ob1gjh1y10gniq9b].[none:Age (bin):qk]' scope='cols' value='Age' />
+            <format attr='title' class='0' field='[federated.0aurd2l12rs0ob1gjh1y10gniq9b].[cnt:age:qk]' scope='rows' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0aurd2l12rs0ob1gjh1y10gniq9b].[cnt:age:qk]</rows>
+        <cols>[federated.0aurd2l12rs0ob1gjh1y10gniq9b].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0aurd2l12rs0ob1gjh1y10gniq9b].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1BF08473-88DB-4FFB-83FE-406D99E1572F}' />
+    </worksheet>
+    <worksheet name='Black'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='age_fata_Black' name='federated.0uf94sc023fmu018tf8bu1re6sn4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uf94sc023fmu018tf8bu1re6sn4'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0uf94sc023fmu018tf8bu1re6sn4].[cnt:age:qk]' scope='rows' value='Count' />
+            <format attr='title' class='0' field='[federated.0uf94sc023fmu018tf8bu1re6sn4].[none:Age (bin):qk]' scope='cols' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0uf94sc023fmu018tf8bu1re6sn4].[cnt:age:qk]</rows>
+        <cols>[federated.0uf94sc023fmu018tf8bu1re6sn4].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0uf94sc023fmu018tf8bu1re6sn4].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1FDD8BA7-A734-490F-9FB3-4369419B1957}' />
+    </worksheet>
+    <worksheet name='Hispanic'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='age_fata_Hispanic' name='federated.0nag9n01lrjbkf15odpyd0h72ns0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nag9n01lrjbkf15odpyd0h72ns0'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0nag9n01lrjbkf15odpyd0h72ns0].[cnt:age:qk]' scope='rows' value='Count' />
+            <format attr='title' class='0' field='[federated.0nag9n01lrjbkf15odpyd0h72ns0].[none:Age (bin):qk]' scope='cols' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0nag9n01lrjbkf15odpyd0h72ns0].[cnt:age:qk]</rows>
+        <cols>[federated.0nag9n01lrjbkf15odpyd0h72ns0].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0nag9n01lrjbkf15odpyd0h72ns0].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{CB692E52-72F3-47A9-972B-46EEA8D2EB00}' />
+    </worksheet>
+    <worksheet name='Native American'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='age_fata_Native American' name='federated.06jr4jg0a0fa9e152tl3r1mtfpuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06jr4jg0a0fa9e152tl3r1mtfpuc'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.06jr4jg0a0fa9e152tl3r1mtfpuc].[none:Age (bin):qk]' scope='cols' value='Age' />
+            <format attr='title' class='0' field='[federated.06jr4jg0a0fa9e152tl3r1mtfpuc].[cnt:age:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.06jr4jg0a0fa9e152tl3r1mtfpuc].[cnt:age:qk]</rows>
+        <cols>[federated.06jr4jg0a0fa9e152tl3r1mtfpuc].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.06jr4jg0a0fa9e152tl3r1mtfpuc].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{06D70FA8-5F91-4F56-BDF3-E6D1923E1D37}' />
+    </worksheet>
+    <worksheet name='Overall'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fatalities_age' name='federated.1lip6k30grpc191diie4z1esej9o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lip6k30grpc191diie4z1esej9o'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1lip6k30grpc191diie4z1esej9o].[none:Age (bin):qk]' scope='cols' value='Age' />
+            <format attr='title' class='0' field='[federated.1lip6k30grpc191diie4z1esej9o].[cnt:age:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1lip6k30grpc191diie4z1esej9o].[cnt:age:qk]</rows>
+        <cols>[federated.1lip6k30grpc191diie4z1esej9o].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1lip6k30grpc191diie4z1esej9o].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{CF66EE48-8600-4836-AF34-0B21E2C771AE}' />
+    </worksheet>
+    <worksheet name='White'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='age_fata_White' name='federated.0n98j6m0cqld8b137g8oc0mljje2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n98j6m0cqld8b137g8oc0mljje2'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0n98j6m0cqld8b137g8oc0mljje2].[none:Age (bin):qk]' scope='cols' value='Age' />
+            <format attr='title' class='0' field='[federated.0n98j6m0cqld8b137g8oc0mljje2].[cnt:age:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0n98j6m0cqld8b137g8oc0mljje2].[cnt:age:qk]</rows>
+        <cols>[federated.0n98j6m0cqld8b137g8oc0mljje2].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0n98j6m0cqld8b137g8oc0mljje2].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B5198263-E78B-4FCB-9B9B-436289AD7FBF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='193'>
+    <window class='worksheet' maximized='true' name='Overall'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2554A60D-DD5A-477F-8593-E6061920EC82}' />
+    </window>
+    <window class='worksheet' name='Asian'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A482D45-6768-44E3-B0A7-FC6875781A4B}' />
+    </window>
+    <window class='worksheet' name='Black'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0uf94sc023fmu018tf8bu1re6sn4].[none:Age (bin):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{DB595426-2B22-4508-84F6-CEB8E52D1B85}' />
+    </window>
+    <window class='worksheet' name='Hispanic'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{168B5ACC-D80E-4FD1-85BE-5632DC7568BE}' />
+    </window>
+    <window class='worksheet' name='Native American'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA6BCAA8-21B5-4C6D-AE5E-027EF1507767}' />
+    </window>
+    <window class='worksheet' name='White'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0n98j6m0cqld8b137g8oc0mljje2].[none:Age (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0277247A-61EE-4B71-98DD-F01E091D47B9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Asian' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Black' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Hispanic' width='192'>
+      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
+      ASCp/Q9nMe6T2l0tbQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Native American' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAIf0lEQVR4nO3dW28U5x3H8d/s+eADxmBsY3BMIQEi0qqtlIvctqqqqpFyW/VV5JX0rq+g
+      d72uqjZKq0qtFBQgh5oSsDEEO147Puzae/LuzjO9aDEgWWY8uzte9v/9XCFr/Z9n7fl6d8bo
+      sRcEQSDAqMRpLwA4Takon+Sck+/78jwv8oGdc0oketPfsM8axDUNy6wTBOC0srSsiQsXdWa0
+      oCAIlEwmIy5R6nQ6SqUi9Wdu1iCuaVhmhU6u/GxZZT/6CQ8MotABeMm0pmdmtVVa6+d6gFiF
+      DmB8Zl7e/qYuXLzcz/UAsQr/psvzNM3JjyHDbVCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMA
+      mEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTQgcQtHb1xdePtFet
+      93M9QKxC7wvk+wkVCimVK3saKeTknFM3O6s759TpdCJ//psw60//XNRevd31nCAIQm1E/MGt
+      S7o0PXnsYwb1a3Vas8IHECSV8pycC5RIJNgcN4RP732rlc1aT2aFcW1uUgtzF459zKB+rU5r
+      VugjZgsjWlgodrUlOjBoTnQRzMmPYcNdIJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAw
+      jQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEw7UQDPlr7U0rPd
+      fq0FiF3orRGrOyXtHzj5fkPOjb9xm+Oube7qs/trr50VdiPaQbS4UtLTjcqxj+nl8xvNJ/Xz
+      92/0ZFbY8+GT2w+0Vz/+cSd5juH3Bh2Z0OVZp/W99Bu5OW5pu6o/fPqgJ8cLa2GqGOvxvnq8
+      FetmvAtTRf3yg1s9mRX2fPjz7ZWePsfQZ2A6k1U6M6trEz07NnDquAiGaQQA0wgAphEATCMA
+      mEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYdmQA
+      B7trery5r8XFxbjXA8TqyABWlh7o73/9i1Y3j99kCXjTHRnA5UsXlc4VNHFmLO71ALE6MoDs
+      2Hll/Joqe/txrweI1dEXwV5SxUJOpVLp8EPtZk3Ly8va+J7NcTE8jt0a0Tl3+O90rqiU11G9
+      0ZRzruvNcVdL2/Kjf/ornHNKJI6/obWzF9+emZYsP9voyZww38N+ODKATquhxoGv0dHRw481
+      qxX5QVKddrsnm+P+7o+3Y9/IFb338e//Fuvxev19PDKAwHWUSGUUOP/wY7mRcb1VGD2VSoF+
+      OfJsfrRa0Ue//oXeXph79cGc/BgyR74CrDz8t5rNhpaeruvWrd7s/w4MoiMD+NWHH2lza0fv
+      /ejHca8HiNWRASTTWc3MzMS9FiB2vKmHaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMI
+      AKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYFjoAv1XX0tKSNrbYHBfD49jNcV+W
+      SOU0NTmu7f2GnBvvenNcYBCEDqC1v6Xl7yq6cXW+J5vjAoMg9FugZH5MF8+Pq93xX/9g4A0R
+      +hUglclpairXz7UAseMuEEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHA
+      NAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKaFDiBwvh5887CfawFiF3pnuMD5
+      6jgnSXLOsTkuhkLoALxEUnIdtdsdpdMpNsfFUAj/9wE6bZ0ZP6P9Wr2f6wFidaLNcefm5vq5
+      FiB23AWCaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0
+      AoBpBADTCACmEQBMIwCYdqIAfN9nMywMldDbojTLm3q0XlaxMKIr87P9XBMQm9CvAOWdmq5e
+      vybPP+jneoBYhQ7g3MxZrXzzUJniWD/XA8Qq/M5w+XHdvD4uSYfXAd1cDyQTnpIJL/LnD/rx
+      TuOYw368fhzTCyKcxb3YGdo5p0SiNzehhn3WIK5pWGaFfgV4WS8W6nlez57wsM8axDUNy6xI
+      rwDAsIj0CtCNlft3VJh7T82tJ6o2na7ffEdR/8rA08eP1ArSyqd8leu+3r3xtqK+O3w+ayyf
+      0tZuVe+8ez3yF+f5rKtvzerOF//RT3/yw0hzOgc1PXm2rmxhVJ36rrJj5zU7NdnlrKLq5R0l
+      ciO6dmU+0qx2s6Zv10rKFkZVL28qWTijH8xH2zl8r7yt7zc3NToxrb3KtrKFUV2avdDVrInp
+      K2qVn6iVmdHl6eNv2sT+m+CLFybVaAdqNppqNBryunj9OXt2QvI8tV1SU7m0uvnLBc9nnTs3
+      KeeCrr4wz2c9WXmqfDEf+XoplS1oNJ9RItHS+vq+mvVa5DW9mJVUo9FQs9GMPCudKyoZHOig
+      tad0bkpJ1448a6Q4our+npL54uH6up3Vau6r0fHVaL5+XTEH4LS6+p02SiW1O76ynlPTRZ3V
+      0d27XyuXy6nVqGq9UlUu8rpezLrz+ecqFAuK3uWLWbl8TpWdbbX9aNNq36/q4eq2stkRjY1l
+      VK9HT/xwVsrJeVn5negnbbNakZcuqtV0qlbWVW20Is8ql8s6c3ZCpaX7/3+uma5nbW9XlElI
+      tdrrf2Cc2jVAEAQKgqAnFz69nDWoAucUeJ4SXve3AJ1z8jxPXhezfN9XMpnswaxAvu969Oe2
+      Tj6Li2CYNrw/MoEQCACmEQCG1sriPX3yrzuH14hBEPzvfzG89JjYfw8AxOXh6obabV9fffYP
+      rW2s6yAY0erahj78zW81P5GVRAAYVkFLW6UNZRJO6/m85DpqdTqqNapKuBf33rkLhKG3tf5U
+      d+99qZvv/0yzE9lXftlGADDtv+5nXr54n6HqAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Overall' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='White' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
