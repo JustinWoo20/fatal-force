@@ -70,6 +70,12 @@ pip install -r requirements.txt
 [Fatalities by Age](https://public.tableau.com/views/FatalitiesbyAge/FatalitiesbyAge?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![fatalities-by-age.png](tableau_workbooks/output/fatalities-by-age.png)
 
+[Fatalities by Race in Top 10 Cities](https://public.tableau.com/views/City_state_charts/FatalitiesbyRaceDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![fatalities_by_race_dashboard.png](tableau_workbooks/output/fatalities_by_race_dashboard.png)
+
+[Choropleth Map](https://public.tableau.com/shared/MW54NPYS8?:display_count=n&:origin=viz_share_link)
+![choropleth_state_map.png](tableau_workbooks/output/choropleth_state_map.png)
+
 ---
 ## Future Improvements
 Currently, the data analysis does not account for population differences across the various regions represented in the dataset. 
